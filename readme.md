@@ -3,9 +3,9 @@ Programa Formação - FCamara - Hackathon
 Um desafio criado pela empresa para realizar o agendamento o lugar nas salas de trabalho
 , respeitando a legislação de funcionamento de 40%.
 
-E realizando um diferencial que é o adendamento da sala de reunião.
+E realizando um diferencial que é o agendamento da sala de reunião.
 
-Os pré-requisitos é Ter instalado Python3+, pip e instalar o requirements do projeto, com o comando abaixo:
+Os pré-requisitos é ter instalado Python3+, pip e instalar o requirements do projeto, com o comando abaixo:
 
 `pip install -r requirements.txt`
 
