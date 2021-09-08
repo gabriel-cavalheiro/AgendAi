@@ -11,19 +11,10 @@ class Consultor(models.Model):
     def __str__(self):
         return self.nome_consultor
 
-class Sala_Escritorio(models.Model):
-    capacidade_total = models.IntegerField(blank=False, null=True, verbose_name='Capacidade Total')
-
-    class Meta:
-        db_table = 'sala_escritorio'
-
-    def __str__(self):
-        return self.capacidade_total
-
 class Escritorio(models.Model):
     local_escritorio = models.CharField(max_length=150, blank=False, null=False, verbose_name='Local do Escritorio')
     percentual_legislacao = models.DecimalField(max_digits=5, decimal_places=2, blank=False, null=True, verbose_name='Percentual da Legislação')
-    capacidade_escritorio = models.ForeignKey(Sala_Escritorio, on_delete=models.DO_NOTHING, verbose_name='Total da Capacidade')
+    capacidade_total = models.IntegerField(blank=False, null=True, verbose_name='Capacidade Total')
 
     class Meta:
         db_table = 'escritorio'

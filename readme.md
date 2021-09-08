@@ -1,7 +1,6 @@
 Programa Formação - FCamara - Hackathon
 
-Um desafio criado pela empresa para realizar o agendamento o lugar nas salas de trabalho
-, respeitando a legislação de funcionamento de 40%.
+Um desafio criado pela empresa para realizar o agendamento de lugares nas salas de trabalho e respeitando a legislação de funcionamento de 40%.
 
 E realizando um diferencial que é o agendamento da sala de reunião.
 
