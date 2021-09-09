@@ -81,7 +81,7 @@ $gutter: 24px;
     background-color: #222;
     
     border: 1px solid red;
-    height: 72px;
+    height: auto;
     float: left;
 
     @include responsive(s){
