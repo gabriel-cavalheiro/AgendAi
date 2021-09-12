@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/agendamento.css">
+    <title>AgendAí</title>
+</head>
+<body>
+    <h1>Faça seu agendamento da sala</h1>
+    <form action="/">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadio" id="flexRadioSaoPaulo">
+            <label class="form-check-label" for="flexRadioDefaultSaoPaulo">
+              São Paulo
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadio" id="flexRadioSantos">
+            <label class="form-check-label" for="flexRadioDefaultSantos">
+              Santos
+            </label>
+          </div>
+          <label for="form-date">Escolha o dia e o horário do seu agendamento</label>
+          <input type="datetime-local" required>
+          <br>
+        <label for="form-reserv">Escolha sua sala</label>
+            <select>
+            <option selected>Selecione a sala</option>
+            <option value="1">1A</option>
+            <option value="2">2A</option>
+            <option value="3">3A</option>
+          </select>
+        <br>
+        <button type="submit" >Agendar</button>
+    </form>
+    
+</body>
+</html>

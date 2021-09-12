@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 *,
 *:after,
 *:before {
@@ -552,6 +554,7 @@ strong {
   margin-left: 128px;
 }
 
+
 .mr-1 {
   margin-right: 8px;
 }
@@ -801,7 +804,8 @@ body {
   height: 100vh;
   position: relative;
   scroll-behavior: smooth;
-  background-color: #1a1a1a;
+  background-color: #fafafa;
+  font-family: 'Poppins', sans-serif;
 }
 
 svg {
@@ -816,177 +820,5 @@ img {
   border: 1px solid red;
 }
 
-.teste-cadeira {
-  width: 56px;
-  height: 50px;
-  background: linear-gradient(46.1deg, rgba(168, 254, 117, 0.74) 38.03%, #20DBDA 95.59%);
-  border-radius: 9px;
-  margin: 12px;
-  -webkit-transition: 3s ease-in-out;
-  transition: 3s ease-in-out;
-  cursor: pointer;
-}
 
-.teste-cadeira-reserved {
-  width: 56px;
-  height: 50px;
-  background: linear-gradient(221.72deg, rgba(226, 23, 47, 0.74) 30.84%, #EA38A3 67.78%);
-  border-radius: 9px;
-  margin: 12px;
-  -webkit-transition: 3s ease-in-out;
-  transition: 3s ease-in-out;
-  cursor: pointer;
-}
-
-.teste-cadeira-blocked {
-  width: 56px;
-  height: 50px;
-  background: linear-gradient(221.72deg, rgba(242, 229, 231, 0.74) 30.84%, #736F71 83.56%);
-  border-radius: 9px;
-  margin: 12px;
-  -webkit-transition: 3s ease-in-out;
-  transition: 3s ease-in-out;
-  cursor: pointer;
-}
-
-.container-advantageCard {
-  width: 100%;
-  height: auto;
-  position: relative;
-  margin: 2rem auto 6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.subTitle {
-  width: 100%;
-  height: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  line-height: 1rem;
-  color: #fff;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-  margin: 5.8rem auto 4rem;
-  line-height: 2rem;
-}
-
-.subTitle h2 {
-  margin-right: 0.5rem;
-}
-
-.advantageCard {
-  position: relative;
-  cursor: pointer;
-}
-
-.advantageCard > .face {
-  width: 18.75rem;
-  height: 12.5rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.advantageCard .face.face1 {
-  position: relative;
-  background: #333;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 1;
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
-}
-
-.face.face1 .content {
-  opacity: 0.2;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.advantageCard:hover .face.face1 .content {
-  opacity: 1;
-}
-
-.advantageCard:hover .face.face1 {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  background-color: #FE4400;
-}
-
-.advantageCard .face.face2 {
-  position: relative;
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1.25rem;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
-  -webkit-transform: translateY(-100px);
-          transform: translateY(-100px);
-}
-
-.advantageCard:hover .face.face2 {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.content img {
-  width: 150px;
-}
-
-.content h3 {
-  margin: 10px 0 0;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-.content p {
-  margin: 0;
-  padding: 0;
-}
-
-.content a {
-  margin: 15px 0 0;
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 900;
-  color: #333;
-  padding: 5px;
-  border: 1px solid #333;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.content a:hover {
-  background: #333;
-  color: #fff;
-}
 /*# sourceMappingURL=style.css.map */
