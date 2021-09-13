@@ -232,7 +232,7 @@ a:hover{
     justify-content: center;
     align-items: center;
     z-index: 1;
-    transform: translateY(100px);
+    
 }
 
 .face.face1 .content {
@@ -245,7 +245,7 @@ a:hover{
 }
 
 .advantageCard:hover .face.face1 {
-    transform: translateY(0);
+    
     background-color: #FE4400;
 }
 
