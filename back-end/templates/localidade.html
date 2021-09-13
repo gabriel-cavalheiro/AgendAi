@@ -1,0 +1,25 @@
+{% extends "parciais/base.html" %}
+{% block content %}
+        <section id="lista_local_escritorio">
+                <div class="container-fluid">
+                    <p>LOCALIDADES DOS ESCRITÓRIOS</p>
+                </div>
+        </section>
+        <section class="container-fluid margin">
+            <div class="table-responsive-lg">
+                <table class="table table-xl table-bordered">
+                    <tbody>
+                           {% for i in escritorio %}
+                                <tr>
+                                    <th hidden>{{i.id}}</th hidden>
+                                    <th><a href="/escolha/">{{i.local_escritorio}}</a></th>
+                                </tr>
+                           {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <div align="right">
+                <button type="button" onclick="window.print()" class="btn btn-outline-secondary">Imprimir</button>
+            </div>
+        </section>
+{% endblock %}
