@@ -1,0 +1,41 @@
+{% load static %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+      <link rel= "stylesheet" type="text/css" href= "{% static '/style.css' %}" >
+
+          <title>AgendAÍ</title>
+
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+              <a class="navbar-brand" href="/">
+                   <img src="{% static 'imagens/logo-orange.svg' %}" width="90" height="70">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#">Agendamentos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Reunião</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Workstation</a>
+                  </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="/admin">Administrador</a>
+                      </li>
+                               {% if request.user.is_authenticated %}
+                                  <li class="nav-item active">
+                                    <a class="nav-link">Olá, {{ request.user.first_name }}<span class="sr-only">(current)</span></a>
+                                  <li class="nav-item active"><a href="/logout" class="nav-link">Logout</a></li>
+                               {% else %}
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="/login">Login</a>
+                                  </li>
+                               {% endif %}
+                </ul>
+              </div>
+        </nav>

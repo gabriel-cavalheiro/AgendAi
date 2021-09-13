@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel= "stylesheet" type="text/css" href= "{% static '/style.css' %}" >
+    <title>AgendAí</title>
+</head>
+<body>
+
+    <section class="container-advantageCard">
+        <span class="subTitle">
+          <h3 style="color: #fafafa;">Escolha seu agendamento:</h3>
+        </span>
+        <div class="advantageCard">
+          <div class="face face1">
+            <div class="content">
+              <img src="{% static '/imagens/reunião.svg' %}" alt="Reunião">
+              <h3>Reunião</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas pariatur reprehenderit veniam sapiente consequuntur officiis deserunt ipsa id. Possimus veniam id sed? Repellat odio eum non doloribus saepe nesciunt ex.</p>
+              <a href="agendamento.html">Agendar</a>
+            </div>
+          </div>
+        </div>
+        <div class="advantageCard">
+          <div class="face face1">
+            <div class="content">
+              <img src="{% static '/imagens/workstation.svg' %}">
+              <h3>workstation</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ipsam necessitatibus quis fugit nam? Atque enim, quisquam, est natus illo aperiam veritatis fugiat alias quasi, ratione dolorem voluptate quis molestias!</p>
+              <a href="agendamento.html">Agendar</a>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
