@@ -1,0 +1,55 @@
+a, button{
+    @include typeface-2(p2, desktop);
+    text-decoration: none;
+    color: $black-light; 
+    transition: .5s ease;
+    border: hidden;
+     &:hover{
+         opacity: .9;
+     }
+ }
+
+ .btn-login{
+     background-color: transparent;
+     cursor: pointer;
+ }
+ 
+ .btn-hero{
+     background: $primary-light;
+    border-radius: 12px;
+    padding: 12px 48px;
+    transition: .3s ease;
+    color: $white-light;
+    cursor: pointer;
+    
+    &:hover{
+        transform: scale(1.02);
+    }
+}
+
+.btn-primary{
+    background: $primary-light;
+    border-radius: 12px;
+    padding: 12px 24px;
+    transition: .3s ease;
+    color: $white-light;
+    cursor: pointer;
+
+    &:hover{
+        transform: scale(1.02);
+    }
+}
+
+.btn-secondary{
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 12px 24px;
+    transition: .3s ease;
+    color: $secondary-normal;
+    border: 1px solid $secondary-normal;
+    cursor: pointer;
+
+    &:hover{
+        transform: scale(1.02);
+    }
+}

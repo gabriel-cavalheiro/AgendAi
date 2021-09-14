@@ -1,0 +1,64 @@
+header{
+    width: 100%;
+    height: auto;
+    background-color: #F8F9FA;
+    box-shadow: 0px 3px 6px #00000029;
+
+    position: relative;
+}
+
+.navbar{
+    max-width: $container-xl;
+    margin: 0 auto;
+    padding: 10px 24px;
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+     @include responsive(s){
+         display: none;
+     }
+ }
+
+ .logo{
+    width: 150px;
+    height: auto;
+    
+    margin: 5px 0px 0px 40px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 900;
+}
+
+.menu{
+    list-style: none;
+}
+
+.menu-link{
+    position: relative;
+    font-weight: 700;
+    
+    &:nth-child(1){
+        margin-right: 72px;
+    } 
+
+    &:hover{
+        color: $primary-light;
+    }
+}
+
+#bar::after{
+    content: '';
+    position: absolute;
+    
+    height: 30px;
+
+    top: -20%;
+    right: -50%;
+
+    border: 2px solid $black-normal;
+}

@@ -4,7 +4,7 @@
     font-family: 'Quicksand', sans-serif;
   
     @if $size == h1 and $device == desktop {
-      font-size: 64px;
+      font-size: 58px;
       line-height: 100%;
     } @else if $size == h1 and $device == mobile {
       font-size: 36px;
@@ -104,7 +104,7 @@
   p{
     color: $gray-3;
   
-    @include typeface-2(p2, desktop);
+    @include typeface-2(p1, desktop);
     @include responsive(s) {
       @include typeface-2(p2, mobile);
     }
@@ -115,12 +115,13 @@
     color: $black-light;
   }
   
-  strong{
-    color: $black-dark;
-    @include typeface-2(p2, desktop);
-    @include responsive(s) {
-      @include typeface-2(p2, mobile);
+  strong > h1{
+    color: $primary-normal;
+    font-weight: 700;
     }
+
+  .text-uppercase{
+    text-transform: uppercase;
   }
   
   .text-center{
