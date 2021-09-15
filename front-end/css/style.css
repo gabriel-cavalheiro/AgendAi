@@ -9,8 +9,8 @@
 
 .container {
   max-width: 1440px;
-  margin: 48px auto;
-  padding: 48px 16px;
+  margin: 24px auto;
+  padding: 58px 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,6 +194,8 @@
   height: 100%;
   word-break: keep-all;
   margin: 12px;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
 }
 
 .welcome-text > p {
@@ -239,8 +241,8 @@
 }
 
 .welcome-bg-image {
-  width: 100%;
-  height: 448px;
+  width: 90%;
+  height: 490px;
 }
 
 @media screen and (max-width: 960px) {
@@ -770,7 +772,6 @@ header {
 .logo {
   width: 150px;
   height: auto;
-  margin: 5px 0px 0px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -780,6 +781,10 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   z-index: 900;
 }
 
@@ -806,7 +811,7 @@ header {
   height: 30px;
   top: -20%;
   right: -50%;
-  border: 2px solid #232224;
+  border: 1px solid #232224;
 }
 
 @media screen and (max-width: 960px) {
@@ -980,7 +985,8 @@ svg {
 
 .container {
   max-width: 1440px;
-  margin: 48px auto;
+  margin: 0px auto;
+  background-color: #fefbff;
   padding: 48px 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1017,7 +1023,46 @@ svg {
   }
 }
 
-.reservation-type {
+.reservation-card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reservation-card img {
+  width: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px 8px 0px 0px;
+}
+
+@media screen and (max-width: 960px) {
+  .reservation-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.card-body {
+  width: 100%;
+  height: 40px;
+  padding: 24px;
+  font-size: 24px;
+  font-weight: 800;
+  background-color: #edeaef;
+  border-radius: 0px 0px 8px 8px;
+  -webkit-transform: translateY(-26px);
+          transform: translateY(-26px);
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1031,17 +1076,33 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #F8F9FA;
 }
 
-.reservation-type img {
-  width: 300px;
-  background: 0% 0% no-repeat padding-box;
-  border-radius: 8px;
+.card-body > p {
+  color: #161617;
 }
 
-.reservation-type a {
-  border-radius: 8px;
-  text-align: center;
+.workstation {
+  opacity: .8;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.workstation:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.meeting {
+  opacity: .8;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.meeting:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 /*# sourceMappingURL=style.css.map */

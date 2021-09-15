@@ -20,13 +20,9 @@ header{
  .logo{
     width: 150px;
     height: auto;
-    
-    margin: 5px 0px 0px 40px;
 
+    @include flexContainer(center, center);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 900;
 }
 
@@ -57,7 +53,7 @@ header{
     top: -20%;
     right: -50%;
 
-    border: 2px solid $black-normal;
+    border: 1px solid $black-normal;
 }
 
 #bar{
