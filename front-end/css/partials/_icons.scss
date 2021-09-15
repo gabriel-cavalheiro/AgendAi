@@ -1,0 +1,12 @@
+.icon-link{
+    margin-right: 24px;
+    list-style: none;
+}
+
+.icon img{
+    transition: .5s ease;
+
+    &:hover{
+    opacity: .6;
+}
+}

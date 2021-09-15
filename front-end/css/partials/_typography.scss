@@ -1,13 +1,13 @@
 // Typography of project
 
 @mixin typeface-1($size, $device: desktop) {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   
     @if $size == h1 and $device == desktop {
       font-size: 58px;
       line-height: 100%;
     } @else if $size == h1 and $device == mobile {
-      font-size: 36px;
+      font-size: 52px;
       line-height: 100%;
     } @else if $size == h2 and $device == desktop {
       font-size: 52px;
@@ -37,7 +37,7 @@
   }
   
   @mixin typeface-2($size: p2, $device: desktop) {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
   
     @if $size == p1 and $device == desktop {
       font-size: 24px;

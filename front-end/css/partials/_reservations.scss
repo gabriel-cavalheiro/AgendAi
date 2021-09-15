@@ -1,0 +1,36 @@
+.container{
+    max-width: $container-xl;
+    margin: 48px auto;
+  
+    padding: 48px 16px;
+  
+    @include flexContainer(center, center, column);
+  
+    overflow: hidden;
+  
+    @include responsive(s){
+      @include flexContainer(center, center, column);
+      padding: 32px 18px;
+    }
+    
+  }
+
+.reservation-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+    background-color: #F8F9FA;
+}
+
+.reservation-type img {
+    width: 300px;
+    background: 0% 0% no-repeat padding-box;;
+    border-radius: 8px;
+}
+
+.reservation-type a {
+    border-radius: 8px;
+    text-align: center;
+}

@@ -1,4 +1,4 @@
-//OPEN MODAL
+// OPEN/CLOSE MODAL
 
 const buttonLogin = document.querySelector('.open-modal')
 const modal = document.getElementById('mymodal');

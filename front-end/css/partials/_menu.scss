@@ -15,10 +15,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
- 
-     @include responsive(s){
-         display: none;
-     }
  }
 
  .logo{
@@ -49,6 +45,7 @@ header{
     &:hover{
         color: $primary-light;
     }
+
 }
 
 #bar::after{
@@ -61,4 +58,10 @@ header{
     right: -50%;
 
     border: 2px solid $black-normal;
+}
+
+#bar{
+    @include responsive(s){
+        display: none;
+    }
 }
