@@ -11,8 +11,7 @@
                     <tbody>
                            {% for i in escritorio %}
                                 <tr>
-                                    <th hidden>{{i.id}}</th hidden>
-                                    <th><a href="/escolha/">{{i.local_escritorio}}</a></th>
+                                   <th><a href="/escolha/?id={{ i.id }}">{{i.local_escritorio}}</a></th>
                                 </tr>
                            {% endfor %}
                     </tbody>

@@ -1,19 +1,23 @@
-from agendai.models import Escritorio
-from django.contrib.auth.decorators import login_required
-from django.contrib.auth import authenticate,login, logout
-from django.shortcuts import render, redirect
-from django.contrib import messages
+from agendai.models import Escritorio, Cadeira, Sala_Reuniao, Agendamento_Escritorio, Agendamento_Reuniao
+from rest_framework import viewsets
+from agendai.serializers import escritorioSerializer, cadeiraSerializer, sala_reuniaoSerializer, agendamento_reuniaoSerializer, agendamento_escritorioSerializer
 
+class escritorioViewSet(viewsets.ModelViewSet):
+    queryset = Escritorio.objects.all()
+    serializer_class = escritorioSerializer
 
+class cadeiraViewSet(viewsets.ModelViewSet):
+    queryset = Cadeira.objects.all()
+    serializer_class = cadeiraSerializer
 
-def lista_local_escritorio(request):
-    escritorios = Escritorio.objects.all()
-    dados =  {'escritorio': escritorios}
-    return render(request, 'localidade.html', dados)
+class sala_reuniaoViewSet(viewsets.ModelViewSet):
+    queryset = Sala_Reuniao.objects.all()
+    serializer_class = sala_reuniaoSerializer
 
-def escolha(request):
-    pass
-    return render(request, 'escolha.html')
+class agendamento_escritorioViewSet(viewsets.ModelViewSet):
+    queryset = Agendamento_Escritorio.objects.all()
+    serializer_class = agendamento_escritorioSerializer
 
-def agendamento_reuniao(request):
-    pass
+class agendamento_reuniaoViewSet(viewsets.ModelViewSet):
+    queryset = Agendamento_Reuniao.objects.all()
+    serializer_class = agendamento_reuniaoSerializer
