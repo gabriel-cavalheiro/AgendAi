@@ -1,5 +1,4 @@
-from django.contrib import admin
-from django.urls import path, include
+
 from agendai.views import escritorioViewSet, cadeiraViewSet, sala_reuniaoViewSet, agendamento_escritorioViewSet, agendamento_reuniaoViewSet
 from rest_framework.routers import DefaultRouter
 
