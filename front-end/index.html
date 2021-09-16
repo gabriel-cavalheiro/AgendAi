@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <script src="js/svg-inject.min.js"></script>
     <title>AgendAí</title>
 </head>
@@ -34,14 +35,14 @@
                 <h4 class="text-uppercase">Seja bem vindo,</h4>
                 <strong><h1 class="mb-2"> Que bom que você está aqui! </h1></strong>
                 <p class="mb-3 description">Com muito cuidado e segurança estamos planejando a reabertura dos nossos escritórios. Estamos muito felizes com essa novidade.</p>
-                <button class="btn-primary btn-hero" id="open-modal">Reservar</button> 
+                <button class="btn-primary btn-hero open-modal" id="open-modal">Reservar</button> 
             </div>
             <div class="welcome-bg-image">
                 <img src="svg/img-bg.svg" alt="Ilustração da Home" onload="SVGInject(this)" />
             </div>
         </section>
     <!--======= MODAL ========-->    
-        <form action="/" class="modal" id="mymodal">
+        <form action="/" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <h3 class="title-modal">Bem-vindo ao AgendAí</h3>
@@ -65,5 +66,6 @@
 
     <!--========== JS ==========-->
     <script src="js/main.js"></script>
+  
 </body>
 </html>

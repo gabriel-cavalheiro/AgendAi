@@ -16,9 +16,9 @@
     <header id= "header">
         <nav class="navbar" >
             <div class="logo">
-                 <a href="index.html">
-                     <img src="svg/logo.svg" onload="SVGInject(this)" />
-                 </a>
+                <a href="index.html">
+                    <img src="svg/logo.svg" onload="SVGInject(this)" />
+                </a>
             </div>
             <ul class="menu flex-center">
                 <li class="icon-link"><a href="#" class="icon"><img src="svg/user-icon.svg" alt=""></a></li>
@@ -27,7 +27,7 @@
             </ul>
         </nav>
     </header>
-
+    
     <!--======== HERO RESERVA =========-->
     <main class="container">
         <section class="reservation">
@@ -35,7 +35,7 @@
                 <strong><h2 class="mb-3"> O que pretende reservar? </h2></strong>             
             </div>
         </section>
-
+        
         <section class="reservation-card">
             <a href="#" class="open-modal">
                 <div class="card">
@@ -45,8 +45,8 @@
                     </div>
                 </div>
             </a>
-
-            <a href="#" id="open-modal-m">
+            
+            <a href="#" class="open-modal-meeting">
                 <div class="card">
                     <img src="svg/meeting.jpg" alt="Imagem de Reunião">
                     <div class="text-card">
@@ -54,91 +54,57 @@
                     </div>
                 </div>
             </a>
-
+            
             <!--======= MODAL WORKSTATION ========-->    
-        <form action="#" class="modal" id="mymodal">
-            <div class="modal-content-reserv">
-                <span class="close">&times;</span>
-                <h3 class="title-modal title-reserv">Agendamento Estação de Trabalho</h3>
-                <br/>
-                <div class="form-modal flex-wrap">
-                    <div class="flex-column">
-                        <label class="typ" for="drop-city">Escritório</label>
-                         <select name="drop-city" class="input-modal" required>
-                            <option selected>Escolha a cidade</option>
-                            <option value="Sp">São Paulo</option>
-                            <option value="Santos">Santos</option>
-                          </select>
-                    </div>
-                    <div class="flex-column">
-                        <label class="typ" for="data">Data</label>
-                        <input type="date" class="input-modal" required>
-                    </div>
-                    <div class="flex-column">
-                        <label class="typ" for="machine">Máquina</label>
-                        <select name="machine" class="input-modal" required>
-                    </div>
+            <form action="#" class="modal" id="mymodal">
+                <div class="modal-content-reserv">
+                    <span class="close">&times;</span>
+                    <h3 class="title-modal title-reserv">Agendamento Estação de Trabalho</h3>
+                    <br/>
+                    <div class="form-modal flex-wrap">
+                        <div class="flex-column">
+                            <label class="typ" for="drop-city">Escritório</label>
+                            <select name="drop-city" class="input-modal" required>
+                                <option selected>Escolha a cidade</option>
+                                <option value="Sp">São Paulo</option>
+                                <option value="Santos">Santos</option>
+                            </select>
+                        </div>
+                        <div class="flex-column">
+                            <label class="typ" for="data">Data</label>
+                            <input type="date" class="input-modal" required>
+                        </div>
+                        <div class="flex-column">
+                            <label class="typ" for="machine">Máquina</label>
+                            <select name="machine" class="input-modal" required>
+                            </div>
                         <option selected>Escolha a máquina</option>
                         <option value="mac-1">01</option>
                         <option value="mac-4">04</option>
                         <option value="mac-7">07</option>
                         <option value="mac-10">10</option>
-                      </select>
+                    </select>
                     
                 </div>            
             </div>
-
-                 <div class="reserv">
-                <button class="btn-primary mt-2" type="submit">Reservar</button>
-                </div> 
+            
+            <div class="reserv">
+                <button class="btn-primary mt-2 " id="reserv" type="submit">Reservar</button>
+            </div> 
         </form>
+</main>
 
-        <!--======= MODAL MEETING ========-->    
-        <form action="#" class="modal" id="mymodal-m">
-            <div class="modal-content-reserv">
-                
-                        <option selected>Escolha a máquina</option>
-                        <option value="mac-1">01</option>
-                        <option value="mac-4">04</option>
-                        <option value="mac-7">07</option>
-                        <option value="mac-10">10</option>
-                      </select>
-                      <div class="reserv">
-                     <button class="btn-primary mt-2" type="submit">Reservar</button>
-                     </div> 
-                      
-                </div>            
-            </div>
+</section>
 
-        </form>
-    </main>
+</main>      
 
-        </section>
-    
-        </main>    
-                    
-
-    
-
-    <!--======= MODAL ========-->    
-        <form action="/" class="modal" id="mymodal"> 
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h3 class="title-modal">Selecione a data e horário</h3>
-                    <div class="submit">
-                        <input type="date">
-                        <button class="btn-primary mt-2" type="submit">Buscar</button>
-                    </div>  
-            </div>
-        </form>
-    </main> 
-
-    <!--======== RODAPÉ =========-->
-    <footer class="flex-center">
-        <p>&copy; AgendAí 2021 Todos os direitos reservados.</p>
-    </footer>
+<!--======== RODAPÉ =========-->
+<footer class="flex-center">
+    <p>&copy; AgendAí 2021 Todos os direitos reservados.</p>
+</footer>
 
     <!--========== JS ==========-->
     <script src="js/main.js"></script>
+    
 </body>
 </html>
