@@ -16,63 +16,44 @@
     
   }
 
-.reservation-card {
+.reservation-card{
 
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     
+    margin-bottom: 24px;
     
+    @include flexContainer(space-evenly, center);
+    flex-wrap: wrap;
+    
+    object-fit: cover;
+
+    
+}
+
+.card{
+    width: 490px;
+
+    padding: 16px 16px 52px 16px;
+    border-radius: 24px;
+    box-shadow: 0px 2px 8px #4A4A4A29;
+    border: 1px solid #E2E6EA;
+
+    transition: .5s ease;
 
     & img{
-       width: 450px;
-       object-fit: cover;
-       border-radius: 8px 8px 0px 0px;
+        border-radius: 24px;
+    }
+
+    &:hover{
+        transform: scale(1.02);
     }
 
     @include responsive(s){
-        flex-direction: column;
+        width: 300px;
+        margin: 0px 16px 16px 0px;
     }
 }
 
-.card-body{
-    width: 100%;
-    height: 40px;
-    padding: 24px;
-
-    font-size: 24px;
-    font-weight: 800;
-
-    background-color: $white-dark;
-
-    border-radius: 0px 0px 8px 8px;
-    transform: translateY(-26px);
-    z-index: 1;
-
-    @include flexContainer(center, center);
-
-     & > p {
-        color: $black-dark;
-    }
-}
-
-.workstation{
-    opacity: .8;
-    transition: .3s ease;
-    
-        &:hover{
-        opacity: 1;
-        transform: scale(1.02);
-    }
-}
-
-.meeting{
-    opacity: .8;
-    transition: .3s ease;
-    
-        &:hover{
-        opacity: 1;
-        transform: scale(1.02);
-    }
+.card-text{
+    font-weight: 600;
 }

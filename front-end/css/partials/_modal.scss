@@ -18,6 +18,7 @@
     transition: 1s ease;
 }
 
+
 .modal-active{
     opacity: 1;
     pointer-events: all;
@@ -36,6 +37,25 @@
     @include flexContainer(flex-start, center, column)
 
 }
+
+.modal-content-reserv{
+    width: 80%;
+    height: 420px;
+    position: relative;
+    padding: 56px;
+
+    background-color: $white-light;
+    padding: 40px;
+    border-radius: 23px 27px 23px 23px;
+
+    @include flexContainer(center, flex-start,column)
+
+}
+
+.title-reserv{
+    transform: translateY(-90px)
+}
+
 
 .title-modal{
 
@@ -62,30 +82,46 @@
 
 .form-modal{
     width: 100%;
+    
+    @include flexContainer(space-between,center)
 }
 
 .submit{
     width: 100%;
 
-    @include flexContainer(space-evenly, center);
-    
+    @include flexContainer(space-evenly, center);   
+}
+.typ{
 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: $black-light;
 }
 
 .input-modal{
     border: 1px solid $gray-6;
     width: 300px;
     padding: 12px 32px 12px 12px;
-    margin: 8px auto;
+    margin: 8px 0px;
     border-radius: 8px;
     outline: none;
     font-family: 'Montserrat',sans-serif;
+    right: 33px;
 
     &::placeholder{
         font-family: 'Montserrat', sans-serif;
     }
-
 }
+
+.reserv{
+    width: 100%;
+    
+    @include flexContainer(center,center);
+
+    transform: translateY(56px);
+}
+
 
 btn-modal{
     padding: 12px 24px;

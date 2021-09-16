@@ -37,26 +37,87 @@
         </section>
 
         <section class="reservation-card">
-            <a href="#">
-                <div class="workstation">
-                    <img src="https://images.unsplash.com/photo-1616386261012-8a328c89d5b6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1940&q=80" alt="">
-                    <div class="card-body">
-                        <p>Workstation</p>
+            <a href="#" class="open-modal">
+                <div class="card">
+                    <img src="svg/workstation.jpg" alt="Imagem do worksation">
+                    <div class="text-card">
+                        <p style="font-weight: 700;">Estação de trabalho</p>
                     </div>
                 </div>
             </a>
 
-            <a href="#">
-                <div class="meeting">
-                    <img src="https://images.unsplash.com/photo-1616386261012-8a328c89d5b6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1940&q=80" alt="">
-                    <div class="card-body">
-                        <p>Sala de Reuniões</p>
+            <a href="#" id="open-modal-m">
+                <div class="card">
+                    <img src="svg/meeting.jpg" alt="Imagem de Reunião">
+                    <div class="text-card">
+                        <p style="font-weight: 700;">Sala de Reuniões</p>
                     </div>
                 </div>
             </a>
+
+            <!--======= MODAL WORKSTATION ========-->    
+        <form action="#" class="modal" id="mymodal">
+            <div class="modal-content-reserv">
+                <span class="close">&times;</span>
+                <h3 class="title-modal title-reserv">Agendamento Estação de Trabalho</h3>
+                <br/>
+                <div class="form-modal flex-wrap">
+                    <div class="flex-column">
+                        <label class="typ" for="drop-city">Escritório</label>
+                         <select name="drop-city" class="input-modal" required>
+                            <option selected>Escolha a cidade</option>
+                            <option value="Sp">São Paulo</option>
+                            <option value="Santos">Santos</option>
+                          </select>
+                    </div>
+                    <div class="flex-column">
+                        <label class="typ" for="data">Data</label>
+                        <input type="date" class="input-modal" required>
+                    </div>
+                    <div class="flex-column">
+                        <label class="typ" for="machine">Máquina</label>
+                        <select name="machine" class="input-modal" required>
+                    </div>
+                        <option selected>Escolha a máquina</option>
+                        <option value="mac-1">01</option>
+                        <option value="mac-4">04</option>
+                        <option value="mac-7">07</option>
+                        <option value="mac-10">10</option>
+                      </select>
+                    
+                </div>            
+            </div>
+
+                 <div class="reserv">
+                <button class="btn-primary mt-2" type="submit">Reservar</button>
+                </div> 
+        </form>
+
+        <!--======= MODAL MEETING ========-->    
+        <form action="#" class="modal" id="mymodal-m">
+            <div class="modal-content-reserv">
+                
+                        <option selected>Escolha a máquina</option>
+                        <option value="mac-1">01</option>
+                        <option value="mac-4">04</option>
+                        <option value="mac-7">07</option>
+                        <option value="mac-10">10</option>
+                      </select>
+                      <div class="reserv">
+                     <button class="btn-primary mt-2" type="submit">Reservar</button>
+                     </div> 
+                      
+                </div>            
+            </div>
+
+        </form>
+    </main>
+
         </section>
+    
+        </main>    
+                    
 
-    </main>    
     
 
     <!--======= MODAL ========-->    

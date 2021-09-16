@@ -37,6 +37,7 @@ a, button{
 
     &:hover{
         transform: scale(1.02);
+        background-color: $primary-normal;
     }
 }
 
@@ -52,4 +53,10 @@ a, button{
     &:hover{
         transform: scale(1.02);
     }
+}
+
+form label input{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+    
 }
