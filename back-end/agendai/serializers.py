@@ -11,7 +11,9 @@ class cadeiraSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Cadeira
-        fields = '__all__'
+        fields = ['id', 'numero_cadeira', 'local_escritorio_cadeira', 'status_cadeira']
+
+
 
 class sala_reuniaoSerializer(serializers.ModelSerializer):
 
