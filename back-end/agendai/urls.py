@@ -1,4 +1,5 @@
-
+from django.contrib import admin
+from django.urls import path, include
 from agendai.views import escritorioViewSet, cadeiraViewSet, sala_reuniaoViewSet, agendamento_escritorioViewSet, agendamento_reuniaoViewSet
 from rest_framework.routers import DefaultRouter
 
@@ -10,6 +11,8 @@ router.register(r'agendamento_escritorio', agendamento_escritorioViewSet, basena
 router.register(r'agendamento_reuniao', agendamento_reuniaoViewSet, basename='agendamento_reuniao')
 
 urlpatterns = [
+
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
+
 ]

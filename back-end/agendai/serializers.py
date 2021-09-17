@@ -8,10 +8,10 @@ class escritorioSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class cadeiraSerializer(serializers.ModelSerializer):
-
+    escritorio = serializers.CharField()
     class Meta:
         model = Cadeira
-        fields = ['id', 'numero_cadeira', 'local_escritorio_cadeira', 'status_cadeira']
+        fields = ['id', 'numero_cadeira', 'escritorio', 'status_cadeira']
 
 
 
