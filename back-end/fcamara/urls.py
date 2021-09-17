@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include
+from django.views.generic import RedirectView
 from rest_framework import permissions
 from agendai.views import escritorioViewSet, cadeiraViewSet, sala_reuniaoViewSet, agendamento_escritorioViewSet, agendamento_reuniaoViewSet
 from rest_framework.routers import DefaultRouter
@@ -28,8 +29,9 @@ router.register(r'agendamento_escritorio', agendamento_escritorioViewSet, basena
 router.register(r'agendamento_reuniao', agendamento_reuniaoViewSet, basename='agendamento_reuniao')
 
 urlpatterns = [
+    path('', RedirectView.as_view(url='admin/')),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('documentacao/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
-    path('', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
 ]
