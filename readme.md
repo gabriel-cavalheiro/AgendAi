@@ -4,6 +4,9 @@ Um desafio criado pela empresa FCamara para realizar o agendamento de lugares na
 
 E realizando um diferencial que é o agendamento da sala de reunião.
 
+[Link da Documentação](https://fcamara-agendai.herokuapp.com/swagger/)
+
+
 Os pré-requisitos é ter instalado Python3+ e pip.
 
 Rodar e Instalar o requirements do projeto, com o comando abaixo:
@@ -37,3 +40,4 @@ Para acessar as Api's criadas usar o endpoint /api.
 Documentação da api acessar no endpoint /documentacao ou /swagger.
 
 ![Alt text](https://i.ibb.co/x2G5Wnm/Captura-de-tela-de-2021-09-16-22-03-49.png "Optional title")
+
