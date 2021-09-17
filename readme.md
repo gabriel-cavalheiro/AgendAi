@@ -1,10 +1,12 @@
 Programa Formação - FCamara - Hackathon
 
-Um desafio criado pela empresa para realizar o agendamento de lugares nas salas de trabalho e respeitando a legislação de funcionamento de 40%.
+Um desafio criado pela empresa FCamara para realizar o agendamento de lugares nas escritorios de trabalho e respeitando a legislação do estado para o funcionamento de 40%.
 
 E realizando um diferencial que é o agendamento da sala de reunião.
 
-Os pré-requisitos é ter instalado Python3+, pip e instalar o requirements do projeto, com o comando abaixo:
+Os pré-requisitos é ter instalado Python3+ e pip.
+
+Rodar e Instalar o requirements do projeto, com o comando abaixo:
 
 `pip install -r requirements.txt`
 
@@ -22,3 +24,15 @@ pedir um nome de usuário, e-mail e senha.
 Por fim basta rodar o projeto.
 
 `python manage.py runserver`
+
+Vai ser direcionado para a tela de Administração do Django para cadastrar as informações no Banco de dados.
+
+<imagem>
+
+Para acessar as Api's criadas usar o endpoint /api.
+
+<imagem>
+
+Documentação da api acessar no endpoint /documentacao ou /swagger.
+
+<imagem>
