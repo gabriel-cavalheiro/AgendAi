@@ -26,13 +26,14 @@ Por fim basta rodar o projeto.
 `python manage.py runserver`
 
 Vai ser direcionado para a tela de Administração do Django para cadastrar as informações no Banco de dados.
-
-<imagem>
+ 
+![Alt text](https://i.ibb.co/rwpbD0K/Captura-de-tela-de-2021-09-16-22-00-36.png "Optional title")
 
 Para acessar as Api's criadas usar o endpoint /api.
 
-<imagem>
+![Alt text](https://i.ibb.co/0jX470C/Captura-de-tela-de-2021-09-15-00-35-26.png "Optional title")
+
 
 Documentação da api acessar no endpoint /documentacao ou /swagger.
 
-<imagem>
+![Alt text](https://i.ibb.co/x2G5Wnm/Captura-de-tela-de-2021-09-16-22-03-49.png "Optional title")
